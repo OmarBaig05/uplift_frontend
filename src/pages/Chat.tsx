@@ -173,7 +173,7 @@ export default function Chat() {
         console.log('[CHAT] Last history item:', JSON.stringify(chatHistoryForBackend[chatHistoryForBackend.length - 1]));
       }
 
-      const response = await fetch('http://127.0.0.1:8000/chat', {
+      const response = await fetch('https://nouman-usman-flask--5000.prod1a.defang.dev/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
